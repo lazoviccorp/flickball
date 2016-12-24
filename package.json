@@ -1,0 +1,22 @@
+{
+  "name": "flickball",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "express": "^4.14.0",
+    "node-json-db": "^0.7.3",
+    "socket.io": "^1.5.1",
+    "victor": "^1.1.0"
+  },
+  "engines": {
+    "node": "4.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lazoviccorp/flickball"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "fly": "~1.4.1"
+  }
+}

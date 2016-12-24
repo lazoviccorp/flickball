@@ -1,0 +1,33 @@
+{
+    "rooms": {
+        "gpec62sz4": {
+            "state": 2,
+            "ball": {
+                "x": 683,
+                "y": 331,
+                "r": 10
+            },
+            "time": {
+                "running": false,
+                "total": 0,
+                "minutes": 0,
+                "seconds": 0
+            },
+            "score": {
+                "team_one": 0,
+                "team_two": 2
+            },
+            "members": {},
+            "spectators": {
+                "8FMr7_JPHOv1FDlwAAAA": {
+                    "id": "8FMr7_JPHOv1FDlwAAAA"
+                }
+            },
+            "super_power": {
+                "x": 1,
+                "y": 570,
+                "power": 3
+            }
+        }
+    }
+}
