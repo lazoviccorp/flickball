@@ -7,7 +7,7 @@ module.exports = function () {
   this.r = 10;
   this.hit_safety = false;
   this.lim = 20;
-  this.mult = 0.75;
+  this.mult = 0.2;
 
   this.update = function() {
     var zero_vector = new Victor(0, 0);
@@ -92,7 +92,6 @@ module.exports = function () {
 
   this.slowMotion = function(b) {
     this.lim = b ? 4 : 20;
-    this.mag = b ? 0.3 : 0.75;
   }
 
   this.getObj = function() {

@@ -31,16 +31,11 @@ const RUNNING = 0;
 const PREPARING = 1;
 const RESTARTING = 2;
 
-function startIntervals() {
+function restartServer() {
   var rooms = DbHelper.getRooms();
-  for (var i in rooms) {
-    if (rooms.hasOwnProperty(i)) {
-      IntervalBuilder.set(i, roomHeartbeat, 10);
-      BallGenerator.set(i);
-    }
-  }
+  room = {};
 }
-startIntervals();
+restartServer();
 
 io.on('connection', function(socket) {
 
