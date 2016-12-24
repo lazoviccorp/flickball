@@ -2,7 +2,7 @@ var plan = require('flightplan');
 
 var appName = 'flickball';
 var username = 'deploy';
-var startFile = './server.js';
+var startFile = 'server.js';
 
 var tmpDir = appName+'-' + new Date().getTime();
 
