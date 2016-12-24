@@ -32,9 +32,9 @@ const PREPARING = 1;
 const RESTARTING = 2;
 
 function restartServer() {
-  var rooms = DbHelper.getRooms();
-  room = {};
+  DbHelper.restartRooms();
 }
+
 restartServer();
 
 io.on('connection', function(socket) {
@@ -231,6 +231,7 @@ function createNewRoom() {
 
   DbHelper.setRoom(id, room);
 
+  console.log("New room created: " + id);
   return id;
 }
 
@@ -275,7 +276,7 @@ function roomHeartbeat(room_id) {
   if (team_id) {
     io.to(room_id).emit('goal');
     room.score[team_id] += 1;
-    prepareForRestart(room);
+    prepareForRestart(room, room_id);
   }
   ball.constr();
 

@@ -1,6 +1,6 @@
 {
     "rooms": {
-        "gpec62sz4": {
+        "vscnm798l": {
             "state": 2,
             "ball": {
                 "x": 683,
@@ -14,19 +14,15 @@
                 "seconds": 0
             },
             "score": {
-                "team_one": 0,
-                "team_two": 2
+                "team_one": 5,
+                "team_two": 3
             },
             "members": {},
-            "spectators": {
-                "8FMr7_JPHOv1FDlwAAAA": {
-                    "id": "8FMr7_JPHOv1FDlwAAAA"
-                }
-            },
+            "spectators": {},
             "super_power": {
-                "x": 1,
-                "y": 570,
-                "power": 3
+                "x": 175,
+                "y": 78,
+                "power": 2
             }
         }
     }

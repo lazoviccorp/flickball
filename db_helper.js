@@ -9,6 +9,20 @@ module.exports = function(db){
     return rooms;
   }
 
+  this.restartRooms = function(){
+    var rooms;
+    try {
+      rooms = this.db.getData("/rooms");
+    } catch (e) {}
+    if (Object.keys(rooms).length > 0) {
+      for (var i in rooms) {
+        if (rooms.hasOwnProperty(i)) {
+          this.removeRoom(i);
+        }
+      }
+    }
+  }
+
   this.setRoom = function(room_id, room) {
     this.db.push("/rooms/" + room_id, room);
   }

@@ -31,7 +31,7 @@ function setup() {
   var c = createCanvas(windowWidth, windowHeight);
   c.position(0, 0);
 
-  socket = io.connect("http://207.154.201.95:3000");
+  socket = io.connect("http://localhost:3000/");
 
   drawBackground();
   createDialog();

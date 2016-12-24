@@ -7,12 +7,13 @@ module.exports = function () {
   this.r = 10;
   this.hit_safety = false;
   this.lim = 20;
-  this.mult = 0.2;
+  this.mult = 0.1;
 
   this.update = function() {
     var zero_vector = new Victor(0, 0);
     this.vel.mix(zero_vector, 0.01);
-    this.vel.limit(this.lim, this.mult);
+    var c = this.lim / this.vel.length();
+    this.vel.limit(this.lim, c);
     this.pos.add(this.vel);
   }
 
@@ -91,7 +92,7 @@ module.exports = function () {
   }
 
   this.slowMotion = function(b) {
-    this.lim = b ? 4 : 20;
+    this.lim = b ? 2 : 10;
   }
 
   this.getObj = function() {
