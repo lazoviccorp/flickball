@@ -9,7 +9,7 @@ var tmpDir = appName+'-' + new Date().getTime();
 // configuration
 plan.target('staging', [
   {
-    host: '207.154.201.95',
+    host: '46.101.230.137',
     username: username,
     agent: process.env.SSH_AUTH_SOCK
   }
@@ -17,7 +17,7 @@ plan.target('staging', [
 
 plan.target('production', [
   {
-    host: '207.154.201.95',
+    host: '46.101.230.137',
     username: username,
     agent: process.env.SSH_AUTH_SOCK
   },
